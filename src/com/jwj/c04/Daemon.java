@@ -12,6 +12,9 @@ public class Daemon {
         thread.start();
         //分割线，以上时原书代码，以下是笔者为了测试其他线程的Daemon属性
         printlnAllThreadInfo();
+        while (true){
+            System.out.println(1);
+        }
     }
 
     static class DaemonRunner implements Runnable{

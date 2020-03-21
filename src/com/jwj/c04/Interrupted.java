@@ -2,6 +2,9 @@ package com.jwj.c04;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 当线程抛出InterruptedException时会重置中断位为false。此时调用interrupt()并不会把中断位重置
+ */
 public class Interrupted {
     public static void main(String[] args) throws InterruptedException {
         Thread sleepThread=new Thread(new SleepRunner(),"sleepThread");
